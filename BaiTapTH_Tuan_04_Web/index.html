@@ -11,23 +11,26 @@
             display: flex;
             justify-content: center;
         }
-        
         #container {
             display: flex;
             justify-content: space-between;
             width: 1440px;
         }
-        
+        /*CENTER*/
         #center {
             width: 910px;
-            background-color: bisque;
+            background-color: rgb(235, 235, 235);
         }
-        
+        #center_title_left{
+        }
+        #center_title_right{
+        }
+        /*RIGHT*/
         #right {
             width: 440px;
-            background-color: aqua;
+            background-color: rgb(194, 194, 194);
         }
-        
+        /*LEFT*/
         #left {
             width: 90px;
             height: 870px;
@@ -35,26 +38,22 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        
         #left_above {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
         #below {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        
         .item {
             width: 32px;
             margin-top: 50px;
         }
-        
         #setting {
             margin-top: 36px;
         }
@@ -68,8 +67,9 @@
                 <div id="left_above">
                     <img class="item" src="logo.png" alt="">
                     <img class="item" src="home.png" alt="">
-                    <img class="item" src="cam.png" alt="">
                     <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="calender.png" alt="">
+                    <img class="item" src="cam.png" alt="">
                     <img class="item" src="user.png" alt="">
                 </div>
 
@@ -78,7 +78,16 @@
                     <img id="setting" src="setting.png" width="44" alt="">
                 </div>
             </div>
-            <div id="center">center</div>
+            <div id="center">
+                <div>
+                    <div id="center_title_left">
+                        <h1>Meeting title</h1>
+                    </div>
+                    <div id="center_title_right">
+                        clock
+                    </div>
+                </div>
+            </div>
             <div id="right">right</div>
 
         </div>
